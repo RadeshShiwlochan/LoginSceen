@@ -17,15 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6l-sx-wJt">
-                                <rect key="frame" x="148" y="212" width="269" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6l-sx-wJt">
+                                <rect key="frame" x="184" y="145" width="184" height="21"/>
                                 <color key="backgroundColor" red="0.99283915758132935" green="0.98689955472946167" blue="0.96581798791885376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="cLG-PT-tTf"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uz8-uv-6Na">
-                                <rect key="frame" x="148" y="283" width="269" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uz8-uv-6Na">
+                                <rect key="frame" x="184" y="246" width="184" height="21"/>
                                 <color key="backgroundColor" red="0.99283915758132935" green="0.98689955472946167" blue="0.96581798791885376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -33,6 +36,13 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.12534300910000001" green="0.82684426389999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Uz8-uv-6Na" firstAttribute="top" secondItem="O6l-sx-wJt" secondAttribute="bottom" constant="80" id="FuZ-LU-MRH"/>
+                            <constraint firstItem="O6l-sx-wJt" firstAttribute="leading" secondItem="Uz8-uv-6Na" secondAttribute="leading" id="LbH-vc-wuM"/>
+                            <constraint firstItem="O6l-sx-wJt" firstAttribute="trailing" secondItem="Uz8-uv-6Na" secondAttribute="trailing" id="PGU-xl-jgc"/>
+                            <constraint firstItem="O6l-sx-wJt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="125" id="U8r-Np-BXw"/>
+                            <constraint firstItem="O6l-sx-wJt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="184" id="iFW-7U-aUP"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
