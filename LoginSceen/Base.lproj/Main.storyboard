@@ -34,6 +34,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pbK-sg-LLc">
+                                <rect key="frame" x="184" y="47" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchSwiped:" destination="BYZ-38-t0r" eventType="valueChanged" id="57V-nN-RL1"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="0.12534300910000001" green="0.82684426389999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -44,6 +50,9 @@
                             <constraint firstItem="O6l-sx-wJt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="184" id="iFW-7U-aUP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="switchOption" destination="pbK-sg-LLc" id="xSp-r1-uWo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
